@@ -1,0 +1,33 @@
+{
+  "name": "idcard",
+  "version": "0.0.1",
+  "description": "校验身份证合法性，获取身份证详细信息",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navyxie/idcard.git"
+  },
+  "keywords": [
+    "身份证",
+    "idcard",
+    "校验",
+    "实名认证",
+    "实名",
+    "认证"
+  ],
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
+  },
+  "author": {
+    "name": "navyxie"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/navyxie/idcard",
+  "maintainers": [
+    {
+      "name": "navyxie",
+      "email": "navyxie2010@gmail.com"
+    }
+  ]
+}
