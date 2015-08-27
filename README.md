@@ -6,6 +6,8 @@
 
 [verify](#verify)
 
+[info](#info)
+
 <a name="verify" />
 校验身份证合法性，返回boolean值
 
@@ -17,6 +19,46 @@ var idCard = require('idcard');
 */
 idCard.verify('440882199100201232');//false
 ```
+
+<a name="info" />
+获取身份证详细信息，返回一个json对象，key:valid为boolean值，代表身份证是否合法。
+```js
+//身份证合法时返回的数据结构
+{ 
+	valid: true,//身份证是否合法的标志
+	gender: 'M',//M->男，F->女
+	birthday: 19910210,//
+	province: {
+		code: '440000',//行政区域编码
+		text: '广东省' 
+	},
+	city: { 
+		code: '440800', 
+		text: '湛江市' 
+	},
+	area: { 
+		code: '440882', 
+		text: '雷州市' 
+	},
+	cardType: 1,//身份证类型，1->大陆，2->港澳台
+	cardText: '大陆',
+	address: '广东省湛江市雷州市' 
+}
+//身份证非法时返回的数据结构
+{
+	valid: false
+}
+```
+
+```js
+var idCard = require('idcard');
+/**
+* param:idcard(string)
+* return object
+*/
+idCard.info('440882199100201232');
+```
+
 
 ### 身份证中第十八位数字的计算方法
 

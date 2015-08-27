@@ -6,7 +6,7 @@ describe('#idCard#',function(){
 			idCard.verify('440882199102104190').should.be.false();
 		});
 		it('it must be ok',function(){
-			idCard.verify('380882199102104199').should.be.true();
+			idCard.verify('440882199102104195').should.be.true();
 		});
 	});
 })
