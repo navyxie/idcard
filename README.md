@@ -4,9 +4,9 @@
 
 ## [API](#API)
 
-[verify](#verify)
+[`verify`](#verify)
 
-[info](#info)
+[`info`](#info)
 
 <a name="verify" />
 校验身份证合法性，返回boolean值
@@ -22,6 +22,17 @@ idCard.verify('440882199100201232');//false
 
 <a name="info" />
 获取身份证详细信息，返回一个json对象，key:valid为boolean值，代表身份证是否合法。
+
+```js
+var idCard = require('idcard');
+/**
+* param:idcard(string)
+* return object
+*/
+idCard.info('440882199100201232');
+```
+**返回结果：**
+
 ```js
 //身份证合法时返回的数据结构
 { 
@@ -48,15 +59,6 @@ idCard.verify('440882199100201232');//false
 {
 	valid: false
 }
-```
-
-```js
-var idCard = require('idcard');
-/**
-* param:idcard(string)
-* return object
-*/
-idCard.info('440882199100201232');
 ```
 
 
