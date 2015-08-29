@@ -9,7 +9,7 @@
 [`info`](#info)
 
 <a name="verify" />
-校验身份证合法性，返回boolean值
+verify:校验身份证合法性，返回boolean值
 
 ```js
 var idCard = require('idcard');
@@ -21,7 +21,7 @@ idCard.verify('440882199100201232');//false
 ```
 
 <a name="info" />
-获取身份证详细信息，返回一个json对象，key:valid为boolean值，代表身份证是否合法。
+info:获取身份证详细信息，返回一个json对象，key:valid为boolean值，代表身份证是否合法。
 
 ```js
 var idCard = require('idcard');
