@@ -8,6 +8,8 @@
 
 [`info`](#info)
 
+[`generateIdcard`](#generateIdcard)
+
 <a name="verify" />
 verify:校验身份证合法性，返回boolean值
 
@@ -60,6 +62,17 @@ idCard.info('440882199100201232');
 {
 	valid: false
 }
+```
+
+<a name="generateIdcard" />
+generateIdcard:随机生成一个合法身份证号码，返回身份证号码
+
+```js
+var idCard = require('idcard');
+/**
+* return string
+*/
+idCard.generateIdcard();//返回随机身份证号码
 ```
 
 

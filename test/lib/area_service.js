@@ -10,8 +10,6 @@ describe('area_service',function(){
 		});	
 	});
 	describe('#idcardinfo()',function(){
-		console.log(area_service.idcardinfo('440882199102104195'));
-		console.log(area_service.idcardinfo('440882199111019857'));
 		it('should be ok',function(){
 			area_service.idcardinfo('440882199102104195').should.have.properties({'birthday':19910210,gender:'M',address:"广东省湛江市雷州市"});
 		});
