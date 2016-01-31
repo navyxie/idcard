@@ -9,7 +9,8 @@ describe('#idCard#',function(){
 			idCard.verify('440882199102104195').should.be.true();
 		});
 		it('it must be ok',function(){
-			idCard.verify(idCard.generateIdcard()).should.be.true();
+			var randIdcard = idCard.generateIdcard();
+			idCard.verify(randIdcard).should.be.true();
 		});
 	});
 })
