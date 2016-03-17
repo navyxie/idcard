@@ -14,7 +14,7 @@ describe('area_service',function(){
 			area_service.idcardinfo('440882199102104195').should.have.properties({'birthday':19910210,gender:'M',address:"广东省湛江市雷州市"});
 		});
 		it('should be ok',function(){
-			area_service.idcardinfo('440711198806181519').should.have.properties({'birthday':19880618,gender:'M',address:"广东省江门市"});
+			area_service.idcardinfo('440711198806181519').should.have.properties({'birthday':19880618,gender:'M',address:"广东省江门市郊区"});
 		});	
 		it('should be ok',function(){
 			area_service.idcardinfo('441900198410125825').should.have.properties({'birthday':19841012,gender:'F',address:"广东省东莞市"});
