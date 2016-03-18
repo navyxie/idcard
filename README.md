@@ -90,3 +90,9 @@ idCard.generateIdcard();//返回随机身份证号码
 ## 版本更新
 - 3.0.0 更新地级市和县级市的行政区域代码，同时将[行政区域代码](./lib/province_city_area_code.js)独立出来。
 - 2.0.0 版本完善info接口，对于身份证校验不准确时也返回相应的归属地信息。
+
+**附录：行政区域代码**
+
+- [中华人民共和国国家统计局>>行政区划代码](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/)
+- [全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
+- [中华人民共和国民政部](http://www.mca.gov.cn/article/sj/tjbz/a/)
