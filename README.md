@@ -12,6 +12,8 @@
 
 [`constellation`](#constellation)
 
+[`getAge`](#getAge)
+
 <a name="verify" />
 verify:校验身份证合法性，返回boolean值
 
@@ -88,6 +90,17 @@ var idCard = require('idcard');
 */
 idCard.constellation(19910210);//水瓶
 idCard.constellation('1991/02/10','/');//水瓶
+```
+
+<a name="getAge" />
+getAge:根据生日返回年龄
+
+```js
+var idCard = require('idcard');
+/**
+* return number
+*/
+idCard.getAge(19910210);//25 (调用时的日期：2016/03/23)
 ```
 
 ### 身份证中第十八位数字的计算方法

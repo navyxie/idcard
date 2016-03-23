@@ -29,5 +29,9 @@ describe('area_service',function(){
 			area_service.idcardinfo('40002003010202260X').should.have.properties({'valid':false});
 		});	
 	});
-	
+	describe('#getAge()',function(){
+		it('should be ok',function(){
+			area_service.getAge(19910210).should.be.aboveOrEqual(25);
+		})
+	})
 })

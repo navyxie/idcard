@@ -1,6 +1,6 @@
 {
   "name": "idcard",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "校验身份证合法性，获取身份证详细信息",
   "main": "index.js",
   "repository": {
@@ -13,7 +13,10 @@
     "校验",
     "实名认证",
     "实名",
-    "认证"
+    "认证",
+    "星座",
+    "年龄",
+    "归属地"
   ],
   "devDependencies": {
     "mocha": "^2.2.5",

@@ -21,6 +21,7 @@ describe('#idCard#',function(){
 			var info = idCard.info('440882199102104195');
 			info.valid.should.be.true();
 			info.province.code.should.be.equal("440000");
+			info.age.should.be.equal(25);
 		});
 		it('it must be ok',function(){
 			var info = idCard.info('440882199102104195');
@@ -84,5 +85,10 @@ describe('#idCard#',function(){
 		it('it must be ok',function(){
 			idCard.constellation('1991/03/10','/').should.be.equal("双鱼");
 		});			
+	});
+	describe('getAge()',function(){
+		it('should be ok',function(){
+			idCard.getAge('19910323').should.be.aboveOrEqual(25);
+		})
 	})
 })
