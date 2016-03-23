@@ -12,6 +12,8 @@
 
 [`constellation`](#constellation)
 
+[`getAge`](#getAge)
+
 <a name="verify" />
 verify:校验身份证合法性，返回boolean值
 
@@ -90,6 +92,17 @@ idCard.constellation(19910210);//水瓶
 idCard.constellation('1991/02/10','/');//水瓶
 ```
 
+<a name="getAge" />
+getAge:根据生日返回年龄
+
+```js
+var idCard = require('idcard');
+/**
+* return number
+*/
+idCard.getAge(19910210);//25 (调用时的日期：2016/03/23)
+```
+
 ### 身份证中第十八位数字的计算方法
 
 - 将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7、9、10、5、8、4、2、1、6、3、7、9、10、5、8、4、2； 
@@ -102,7 +115,8 @@ idCard.constellation('1991/02/10','/');//水瓶
 
 
 ## 版本更新
-- 3.1.0 info接口增加返回星座
+- 3.2.0 新增接口getAge,用于返回年龄
+- 3.1.0 info接口增加返回星座，新增接口constellation，用于获取星座
 - 3.0.0 更新地级市和县级市的行政区域代码，同时将[行政区域代码](./lib/province_city_area_code.js)独立出来。
 - 2.0.0 版本完善info接口，对于身份证校验不准确时也返回相应的归属地信息。
 
