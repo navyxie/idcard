@@ -10,6 +10,8 @@
 
 [`generateIdcard`](#generateIdcard)
 
+[`constellation`](#constellation)
+
 <a name="verify" />
 verify:校验身份证合法性，返回boolean值
 
@@ -56,7 +58,8 @@ idCard.info('440882199100201232');
 	cardType: 1,//身份证类型，1->大陆，2->港澳台
 	cardText: '大陆',
 	address: '广东省湛江市雷州市',
-	age:24 
+	age:24,
+	constellation:'水瓶'//星座 
 }
 //身份证非法时返回的数据结构
 {
@@ -75,6 +78,17 @@ var idCard = require('idcard');
 idCard.generateIdcard();//返回随机身份证号码
 ```
 
+<a name="constellation" />
+constellation:根据生日返回星座
+
+```js
+var idCard = require('idcard');
+/**
+* return string
+*/
+idCard.constellation(19910210);//水瓶
+idCard.constellation('1991/02/10','/');//水瓶
+```
 
 ### 身份证中第十八位数字的计算方法
 
@@ -88,5 +102,12 @@ idCard.generateIdcard();//返回随机身份证号码
 
 
 ## 版本更新
+- 3.1.0 info接口增加返回星座
 - 3.0.0 更新地级市和县级市的行政区域代码，同时将[行政区域代码](./lib/province_city_area_code.js)独立出来。
 - 2.0.0 版本完善info接口，对于身份证校验不准确时也返回相应的归属地信息。
+
+**附录：行政区域代码**
+
+- [中华人民共和国国家统计局>>行政区划代码](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/)
+- [全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
+- [中华人民共和国民政部](http://www.mca.gov.cn/article/sj/tjbz/a/)
