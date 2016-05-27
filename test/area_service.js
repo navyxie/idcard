@@ -1,5 +1,5 @@
 var should = require('should');
-var area_service = require('../../lib/area_service');
+var area_service = require('../lib/area_service');
 describe('area_service',function(){
 	describe('#hit()',function(){
 		it('should be ok',function(){

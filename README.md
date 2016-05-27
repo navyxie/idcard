@@ -1,5 +1,7 @@
 # 校验身份证[第二代]合法性，获取身份证详细信息
 
+[![Build Status via Travis CI](https://travis-ci.org/navyxie/idcard.svg?branch=master)](https://travis-ci.org/navyxie/idcard) [![Coverage Status](https://coveralls.io/repos/github/navyxie/idcard/badge.svg?branch=master)](https://coveralls.io/github/navyxie/idcard?branch=master)
+
 ### 安装:npm install idcard
 
 ## [API](#API)

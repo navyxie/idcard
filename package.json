@@ -3,6 +3,10 @@
   "version": "3.2.0",
   "description": "校验身份证合法性，获取身份证详细信息",
   "main": "index.js",
+  "scripts": {
+    "test": "npm install && mocha --recursive test/",
+    "cov":"npm install && ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/navyxie/idcard.git"
@@ -20,7 +24,9 @@
   ],
   "devDependencies": {
     "mocha": "^2.2.5",
-    "should": "^7.0.2"
+    "should": "^7.0.2",
+    "istanbul": "^0.4.3",
+    "coveralls": "2.11.9"
   },
   "author": {
     "name": "navyxie"
