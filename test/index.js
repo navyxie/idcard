@@ -1,5 +1,5 @@
 var should = require('should');
-var idCard = require('../../lib/index');
+var idCard = require('../lib/index');
 describe('#idCard#',function(){
 	describe('verify()',function(){
 		it('it must be no ok',function(){

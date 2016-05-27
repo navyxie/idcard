@@ -1,5 +1,5 @@
 var should = require('should');
-var util = require('../../lib/util');
+var util = require('../lib/util');
 describe('#util#',function(){
 	describe('verifyBirthday()',function(){
 		it('it must be no ok',function(){
