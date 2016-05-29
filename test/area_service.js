@@ -7,7 +7,10 @@ describe('area_service',function(){
 		});
 		it('should not be ok',function(){
 			area_service.hit('40002003010202260X');
-		});	
+		});
+		it('should not be ok',function(){
+			area_service.hit('');
+		});		
 	});
 	describe('#idcardinfo()',function(){
 		it('should be ok',function(){
@@ -27,11 +30,27 @@ describe('area_service',function(){
 		});	
 		it('should not be ok',function(){
 			area_service.idcardinfo('40002003010202260X').should.have.properties({'valid':false});
-		});	
+		});
+		it('should not be ok',function(){
+			area_service.idcardinfo('').should.have.properties({'valid':false});
+		});		
 	});
 	describe('#getAge()',function(){
 		it('should be ok',function(){
 			area_service.getAge(19910210).should.be.aboveOrEqual(25);
-		})
+		});
+		it('should be ok',function(){
+			should(area_service.getAge()).undefined();
+		});
+		it('should be ok',function(){
+			var curDate = new Date();
+			var preTwoYearAge = curDate.getTime() - (366+1)*24*60*60*1000;
+			curDate = new Date(preTwoYearAge);
+			var year = curDate.getFullYear();
+			var month = 1+ curDate.getMonth();
+			var date = curDate.getDate();
+			var tempBirthday = year+''+(month < 10 ? '0' + month : month) + '' + date;
+			area_service.getAge(tempBirthday).should.be.equal(1);
+		});
 	})
 })
