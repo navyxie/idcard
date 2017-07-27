@@ -1,11 +1,11 @@
 {
   "name": "idcard",
-  "version": "3.2.4",
+  "version": "3.3.0",
   "description": "校验身份证合法性，获取身份证详细信息",
   "main": "index.js",
   "scripts": {
     "test": "npm install && mocha --recursive test/",
-    "cov":"npm install && ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "cov": "npm install && ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,10 @@
     "认证",
     "星座",
     "年龄",
-    "归属地"
+    "归属地",
+    "升级",
+    "15",
+    "18"
   ],
   "devDependencies": {
     "mocha": "^2.2.5",
