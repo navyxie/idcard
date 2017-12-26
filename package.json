@@ -1,6 +1,6 @@
 {
   "name": "idcard",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "校验身份证合法性，获取身份证详细信息",
   "main": "index.js",
   "scripts": {

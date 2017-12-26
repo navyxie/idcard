@@ -193,6 +193,11 @@ describe('#idCard#', function() {
       info.valid.should.be.true();
       info.constellation.should.be.equal('射手');
     });
+    it('it must be not ok', function() {
+      var info = idCard.info('440882199100201232');
+      info.valid.should.be.false();
+      info.age.should.be.equal(0);
+    });
   });
   describe('constellation()', function() {
     it('it must be ok', function() {
