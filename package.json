@@ -26,10 +26,12 @@
     "18"
   ],
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^7.0.2",
+    "coveralls": "2.11.9",
     "istanbul": "^0.4.3",
-    "coveralls": "2.11.9"
+    "jsonfile": "^4.0.0",
+    "lodash": "^4.17.5",
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
   },
   "author": {
     "name": "navyxie"
