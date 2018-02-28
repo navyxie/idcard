@@ -143,7 +143,7 @@ result结构:
 4. node bin/checkDiff.js可以看到更新情况
 
 ## 版本更新
-- 4.0.0  区域代码更新自动化，感谢[SwenChan](https://github.com/SwenChan)同学贡献
+- 4.0.0  区域代码更新自动化，感谢[SwenChan](https://github.com/SwenChan)同学贡献代码
 - 3.4.0 升级行政区域代码, 同时将行政区域代码抽出, 独立为三个文件([province](./lib/data/province.json), [city.json](./lib/data/city.json), [area.json](./lib/data/area.json)), 添加[增量更新脚本](./bin/gen_area_data.js)
 - 3.3.1 升级行政区划代码至2016年7月31日
 - 3.3.0 新增接口upgrade15To18,用于将15身份证升级到18位
