@@ -136,8 +136,14 @@ result结构:
 
 *身份证倒数第二位：偶数性别为女，奇数为男*
 
+### 更新区域代码脚本
+1. 将区域代码覆盖code.txt文件 (eg. [	2017年11月中华人民共和国县以上行政区划代码](http://www.mca.gov.cn/article/sj/tjbz/a/2017/))
+2. 将上一个版本的area.json, city.json, province.json, 拷贝到province_city_area_code.js文件中的provinces, citys, areas变量
+3. node bin/gen_area_data.js (注意, 此脚本会覆盖原先的json文件, 请先做好备份)
+4. node bin/checkDiff.js可以看到更新情况
 
 ## 版本更新
+- 3.4.0 升级行政区域代码, 同时将行政区域代码抽出, 独立为三个文件([province](./lib/data/province.json), [city.json](./lib/data/city.json), [area.json](./lib/data/area.json)), 添加[增量更新脚本](./bin/gen_area_data.js)
 - 3.3.1 升级行政区划代码至2016年7月31日
 - 3.3.0 新增接口upgrade15To18,用于将15身份证升级到18位
 - 3.2.0 新增接口getAge,用于返回年龄
