@@ -1,25 +1,33 @@
 var fs = require('fs')
 var jsonfile = require('jsonfile')
 var _ = require('lodash')
-var originArea = require('../lib/province_city_area_code').areas
-var originCity = require('../lib/province_city_area_code').citys
-var originProvince = require('../lib/province_city_area_code').provinces
+const originArea = require('../lib/province_city_area_code').areas
+const originCity = require('../lib/province_city_area_code').citys
+const originProvince = require('../lib/province_city_area_code').provinces
 
-var municipality = ['11', '12', '31', '50']
+const municipality = ['11', '12', '31', '50']
 
 function read () {
-  var txt = fs.readFileSync('./code.txt', { encoding: 'utf-8' })
-  var areaArray = txt.split('\n').map(t => t.split('\t').filter(t => !!t).map(t => t.trim())).map(t => {
-    return [chunkCode(t[0]), t[1]]
-  })
-  // return areaArray
+  var codeInfo = jsonfile.readFileSync('./govCode.json', { encoding: 'utf-8' })
+  const areaArray = _.map(codeInfo, ({text}, code) => [chunkCode(code), text])
   var province = areaArray.filter(t => t[0][1] + t[0][2] === '0000')
-  var city = areaArray.filter(t => (t[0][2] === '00' && t[0][1] === '01') || (municipality.indexOf(t[0][0]) !== -1 && t[0][1] !== '00'))
-  var area = areaArray.filter(t => t[0][1] + t[0][2] !== '0000' && t[0][2] !== '00')
+  // var city = areaArray.filter(t => (t[0][2] === '00' && t[0][1] === '01') || (municipality.indexOf(t[0][0]) !== -1 && t[0][1] !== '00'))
+  const city = areaArray.filter(t => {
+    if (municipality.includes(t[0][0])) {
+      // 处理直辖市逻辑
+      return t[0][1] !== '00'
+    } else {
+      // 非直辖市
+      return t[0][1] + t[0][2] !== '0000' && t[0][2] === '00'
+    }
+  })
+  const area = areaArray.filter(t => t[0][1] + t[0][2] !== '0000' && t[0][2] !== '00')
+  const districts = city
+    .filter(t => !municipality.includes(t[0][0])) // 去掉直辖市
+    .map(t => [[t[0][0], t[0][1], '01'], '市辖区'])
   genProvince(province)
   genCity(city)
-  genArea(area)
-// return area
+  genArea([...area, ...districts])
 }
 
 function chunkCode (code) {
@@ -40,7 +48,7 @@ function genProvince (province) {
     })
     return data
   }, {})
-  var writeData = _.assign({}, originProvince, jsonData)
+  var writeData = _.assign({}, /**originProvince, **/ jsonData)
   jsonfile.writeFileSync('./lib/data/province.json', writeData, {spaces: 2, EOL: '\r\n'})
 }
 
@@ -52,7 +60,8 @@ function genCity (city) {
     var cityCode = codes[0] + codes[1]    
     var municipalityText = {
       '01': '市辖区',
-      '02': '县'
+      '02': '县',
+      '03': '市'
     }
     _.set(data, cityCode, {
       code: isMunicipality ? cityCode + '00' : codes.join(''),
@@ -60,7 +69,7 @@ function genCity (city) {
     })
     return data
   }, {})
-  var writeData = _.assign({}, originCity, jsonData)
+  var writeData = _.assign({}, /**originCity, **/ jsonData)
   jsonfile.writeFileSync('./lib/data/city.json', writeData, {spaces: 2, EOL: '\r\n'})
 }
 
@@ -68,13 +77,14 @@ function genArea (area) {
   var jsonData = area.reduce((data, areaInfo) => {
     var codes = areaInfo[0]
     var text = areaInfo[1]
+    var isDistricts = codes[2] === '01'
     _.set(data, codes[0] + codes[1] + codes[2], {
       code: codes.join(''),
-      text: text
+      text: isDistricts ? '市辖区' : text
     })
     return data
   }, {})
-  var writeData = _.assign({}, originArea, jsonData)
+  var writeData = _.assign({}, /** originArea, **/ jsonData)
   jsonfile.writeFileSync('./lib/data/area.json', writeData, {spaces: 2, EOL: '\r\n'})
 }
 

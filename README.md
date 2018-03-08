@@ -136,14 +136,22 @@ result结构:
 
 *身份证倒数第二位：偶数性别为女，奇数为男*
 
-### 更新区域代码脚本
-1. 将区域代码覆盖code.txt文件 (eg. [	2017年11月中华人民共和国县以上行政区划代码](http://www.mca.gov.cn/article/sj/tjbz/a/2017/))
+### 更新区域代码脚本 (4.0.0)
+1. 将区域代码覆盖code.txt文件 (eg. [2017年11月中华人民共和国县以上行政区划代码](http://www.mca.gov.cn/article/sj/tjbz/a/2017/))
 2. 将上一个版本的area.json, city.json, province.json, 拷贝到province_city_area_code.js文件中的provinces, citys, areas变量
 3. node bin/gen_area_data.js (注意, 此脚本会覆盖原先的json文件, 请先做好备份)
 4. node bin/checkDiff.js可以看到更新情况
 
+### 更新区域代码脚本 (4.1.0)
+1. 将上一个版本的area.json, city.json, province.json, 拷贝到province_city_area_code.js文件中的provinces, citys, areas变量
+2. node bin/get_gov_data.js http://www.mca.gov.cn/article/sj/tjbz/a/2017/201801/201801151447.html (此步骤自动爬取相应链接区域代码并添加到history文件夹内, 链接替换为相应年份的区域代码网址)
+2. node bin/gen_gov_data.js (此步骤将history文件夹内所有code汇总成一份govCode.json文件)
+3. node bin/gen_area_data.js (注意, 此脚本会覆盖原先的json文件, 请先做好备份)
+4. node bin/checkDiff.js可以看到更新情况
+
 ## 版本更新
-- 4.0.0  区域代码更新自动化，感谢[SwenChan](https://github.com/SwenChan)同学贡献代码
+- 4.1.0 更新自动化脚本, 更改更新区域代码步骤, 新增history文件夹, 保留历史(1980~????)以来***所有***行政区域代码
+- 4.0.0 区域代码更新自动化，感谢[SwenChan](https://github.com/SwenChan)同学贡献代码
 - 3.4.0 升级行政区域代码, 同时将行政区域代码抽出, 独立为三个文件([province](./lib/data/province.json), [city.json](./lib/data/city.json), [area.json](./lib/data/area.json)), 添加[增量更新脚本](./bin/gen_area_data.js)
 - 3.3.1 升级行政区划代码至2016年7月31日
 - 3.3.0 新增接口upgrade15To18,用于将15身份证升级到18位
