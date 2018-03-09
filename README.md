@@ -136,11 +136,6 @@ result结构:
 
 *身份证倒数第二位：偶数性别为女，奇数为男*
 
-### 更新区域代码脚本 (4.0.0)
-1. 将区域代码覆盖code.txt文件 (eg. [2017年11月中华人民共和国县以上行政区划代码](http://www.mca.gov.cn/article/sj/tjbz/a/2017/))
-2. 将上一个版本的area.json, city.json, province.json, 拷贝到province_city_area_code.js文件中的provinces, citys, areas变量
-3. node bin/gen_area_data.js (注意, 此脚本会覆盖原先的json文件, 请先做好备份)
-4. node bin/checkDiff.js可以看到更新情况
 
 ### 更新区域代码脚本 (4.1.0)
 1. 将上一个版本的area.json, city.json, province.json, 拷贝到province_city_area_code.js文件中的provinces, citys, areas变量
