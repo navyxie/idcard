@@ -102,7 +102,7 @@ function originCodes () {
   return originObject
 }
 
-if (!module.parent) {
+if (!module.main) {
   console.log(read())
   // console.log(originCodes())
 }
