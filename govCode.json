@@ -839,6 +839,13 @@
     "cityCode": "1302",
     "areaCode": "130283"
   },
+  "130284": {
+    "code": "130284",
+    "text": "滦州市",
+    "provinceCode": "13",
+    "cityCode": "1302",
+    "areaCode": "130284"
+  },
   "130300": {
     "code": "130300",
     "text": "秦皇岛市",
@@ -1086,14 +1093,14 @@
   },
   "130502": {
     "code": "130502",
-    "text": "桥东区",
+    "text": "襄都区",
     "provinceCode": "13",
     "cityCode": "1305",
     "areaCode": "130502"
   },
   "130503": {
     "code": "130503",
-    "text": "桥西区",
+    "text": "信都区",
     "provinceCode": "13",
     "cityCode": "1305",
     "areaCode": "130503"
@@ -1104,6 +1111,20 @@
     "provinceCode": "13",
     "cityCode": "1305",
     "areaCode": "130504"
+  },
+  "130505": {
+    "code": "130505",
+    "text": "任泽区",
+    "provinceCode": "13",
+    "cityCode": "1305",
+    "areaCode": "130505"
+  },
+  "130506": {
+    "code": "130506",
+    "text": "南和区",
+    "provinceCode": "13",
+    "cityCode": "1305",
+    "areaCode": "130506"
   },
   "130521": {
     "code": "130521",
@@ -3653,6 +3674,27 @@
     "cityCode": "1402",
     "areaCode": "140212"
   },
+  "140213": {
+    "code": "140213",
+    "text": "平城区",
+    "provinceCode": "14",
+    "cityCode": "1402",
+    "areaCode": "140213"
+  },
+  "140214": {
+    "code": "140214",
+    "text": "云冈区",
+    "provinceCode": "14",
+    "cityCode": "1402",
+    "areaCode": "140214"
+  },
+  "140215": {
+    "code": "140215",
+    "text": "云州区",
+    "provinceCode": "14",
+    "cityCode": "1402",
+    "areaCode": "140215"
+  },
   "140221": {
     "code": "140221",
     "text": "阳高县",
@@ -3757,6 +3799,34 @@
     "provinceCode": "14",
     "cityCode": "1404",
     "areaCode": "140402"
+  },
+  "140403": {
+    "code": "140403",
+    "text": "潞州区",
+    "provinceCode": "14",
+    "cityCode": "1404",
+    "areaCode": "140403"
+  },
+  "140404": {
+    "code": "140404",
+    "text": "上党区",
+    "provinceCode": "14",
+    "cityCode": "1404",
+    "areaCode": "140404"
+  },
+  "140405": {
+    "code": "140405",
+    "text": "屯留区",
+    "provinceCode": "14",
+    "cityCode": "1404",
+    "areaCode": "140405"
+  },
+  "140406": {
+    "code": "140406",
+    "text": "潞城区",
+    "provinceCode": "14",
+    "cityCode": "1404",
+    "areaCode": "140406"
   },
   "140411": {
     "code": "140411",
@@ -3961,6 +4031,13 @@
     "cityCode": "1406",
     "areaCode": "140624"
   },
+  "140681": {
+    "code": "140681",
+    "text": "怀仁市",
+    "provinceCode": "14",
+    "cityCode": "1406",
+    "areaCode": "140681"
+  },
   "140700": {
     "code": "140700",
     "text": "晋中市",
@@ -3974,6 +4051,13 @@
     "provinceCode": "14",
     "cityCode": "1407",
     "areaCode": "140702"
+  },
+  "140703": {
+    "code": "140703",
+    "text": "太谷区",
+    "provinceCode": "14",
+    "cityCode": "1407",
+    "areaCode": "140703"
   },
   "140721": {
     "code": "140721",
@@ -8168,6 +8252,13 @@
     "cityCode": "2201",
     "areaCode": "220183"
   },
+  "220184": {
+    "code": "220184",
+    "text": "公主岭市",
+    "provinceCode": "22",
+    "cityCode": "2201",
+    "areaCode": "220184"
+  },
   "220200": {
     "code": "220200",
     "text": "吉林市",
@@ -9841,6 +9932,27 @@
     "cityCode": "2307",
     "areaCode": "230716"
   },
+  "230717": {
+    "code": "230717",
+    "text": "伊美区",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230717"
+  },
+  "230718": {
+    "code": "230718",
+    "text": "乌翠区",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230718"
+  },
+  "230719": {
+    "code": "230719",
+    "text": "友好区",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230719"
+  },
   "230721": {
     "code": "230721",
     "text": "铁力县",
@@ -9854,6 +9966,41 @@
     "provinceCode": "23",
     "cityCode": "2307",
     "areaCode": "230722"
+  },
+  "230723": {
+    "code": "230723",
+    "text": "汤旺县",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230723"
+  },
+  "230724": {
+    "code": "230724",
+    "text": "丰林县",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230724"
+  },
+  "230725": {
+    "code": "230725",
+    "text": "大箐山县",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230725"
+  },
+  "230726": {
+    "code": "230726",
+    "text": "南岔县",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230726"
+  },
+  "230751": {
+    "code": "230751",
+    "text": "金林区",
+    "provinceCode": "23",
+    "cityCode": "2307",
+    "areaCode": "230751"
   },
   "230781": {
     "code": "230781",
@@ -10260,6 +10407,13 @@
     "provinceCode": "23",
     "cityCode": "2311",
     "areaCode": "231182"
+  },
+  "231183": {
+    "code": "231183",
+    "text": "嫩江市",
+    "provinceCode": "23",
+    "cityCode": "2311",
+    "areaCode": "231183"
   },
   "231200": {
     "code": "231200",
@@ -11002,6 +11156,13 @@
     "provinceCode": "23",
     "cityCode": "2327",
     "areaCode": "232700"
+  },
+  "232701": {
+    "code": "232701",
+    "text": "漠河市",
+    "provinceCode": "23",
+    "cityCode": "2327",
+    "areaCode": "232701"
   },
   "232721": {
     "code": "232721",
@@ -12101,6 +12262,13 @@
     "provinceCode": "32",
     "cityCode": "3206",
     "areaCode": "320684"
+  },
+  "320685": {
+    "code": "320685",
+    "text": "海安市",
+    "provinceCode": "32",
+    "cityCode": "3206",
+    "areaCode": "320685"
   },
   "320700": {
     "code": "320700",
@@ -13915,6 +14083,13 @@
     "cityCode": "3303",
     "areaCode": "330382"
   },
+  "330383": {
+    "code": "330383",
+    "text": "龙港市",
+    "provinceCode": "33",
+    "cityCode": "3303",
+    "areaCode": "330383"
+  },
   "330400": {
     "code": "330400",
     "text": "嘉兴市",
@@ -15336,9 +15511,23 @@
     "cityCode": "3402",
     "areaCode": "340208"
   },
+  "340209": {
+    "code": "340209",
+    "text": "弋江区",
+    "provinceCode": "34",
+    "cityCode": "3402",
+    "areaCode": "340209"
+  },
+  "340210": {
+    "code": "340210",
+    "text": "湾沚区",
+    "provinceCode": "34",
+    "cityCode": "3402",
+    "areaCode": "340210"
+  },
   "340211": {
     "code": "340211",
-    "text": "郊区",
+    "text": "繁昌区",
     "provinceCode": "34",
     "cityCode": "3402",
     "areaCode": "340211"
@@ -15377,6 +15566,13 @@
     "provinceCode": "34",
     "cityCode": "3402",
     "areaCode": "340225"
+  },
+  "340281": {
+    "code": "340281",
+    "text": "无为市",
+    "provinceCode": "34",
+    "cityCode": "3402",
+    "areaCode": "340281"
   },
   "340300": {
     "code": "340300",
@@ -15755,6 +15951,13 @@
     "provinceCode": "34",
     "cityCode": "3408",
     "areaCode": "340881"
+  },
+  "340882": {
+    "code": "340882",
+    "text": "潜山市",
+    "provinceCode": "34",
+    "cityCode": "3408",
+    "areaCode": "340882"
   },
   "340901": {
     "code": "340901",
@@ -16259,6 +16462,13 @@
     "provinceCode": "34",
     "cityCode": "3418",
     "areaCode": "341881"
+  },
+  "341882": {
+    "code": "341882",
+    "text": "广德市",
+    "provinceCode": "34",
+    "cityCode": "3418",
+    "areaCode": "341882"
   },
   "342100": {
     "code": "342100",
@@ -18493,6 +18703,13 @@
     "cityCode": "3601",
     "areaCode": "360112"
   },
+  "360113": {
+    "code": "360113",
+    "text": "红谷滩区",
+    "provinceCode": "36",
+    "cityCode": "3601",
+    "areaCode": "360113"
+  },
   "360121": {
     "code": "360121",
     "text": "南昌县",
@@ -18794,6 +19011,13 @@
     "cityCode": "3606",
     "areaCode": "360602"
   },
+  "360603": {
+    "code": "360603",
+    "text": "余江区",
+    "provinceCode": "36",
+    "cityCode": "3606",
+    "areaCode": "360603"
+  },
   "360621": {
     "code": "360621",
     "text": "贵溪县",
@@ -18961,6 +19185,13 @@
     "provinceCode": "36",
     "cityCode": "3607",
     "areaCode": "360782"
+  },
+  "360783": {
+    "code": "360783",
+    "text": "龙南市",
+    "provinceCode": "36",
+    "cityCode": "3607",
+    "areaCode": "360783"
   },
   "360800": {
     "code": "360800",
@@ -19248,6 +19479,13 @@
     "provinceCode": "36",
     "cityCode": "3611",
     "areaCode": "361103"
+  },
+  "361104": {
+    "code": "361104",
+    "text": "广信区",
+    "provinceCode": "36",
+    "cityCode": "3611",
+    "areaCode": "361104"
   },
   "361121": {
     "code": "361121",
@@ -20173,6 +20411,27 @@
     "cityCode": "3701",
     "areaCode": "370114"
   },
+  "370115": {
+    "code": "370115",
+    "text": "济阳区",
+    "provinceCode": "37",
+    "cityCode": "3701",
+    "areaCode": "370115"
+  },
+  "370116": {
+    "code": "370116",
+    "text": "莱芜区",
+    "provinceCode": "37",
+    "cityCode": "3701",
+    "areaCode": "370116"
+  },
+  "370117": {
+    "code": "370117",
+    "text": "钢城区",
+    "provinceCode": "37",
+    "cityCode": "3701",
+    "areaCode": "370117"
+  },
   "370121": {
     "code": "370121",
     "text": "历城县",
@@ -20585,6 +20844,13 @@
     "provinceCode": "37",
     "cityCode": "3706",
     "areaCode": "370613"
+  },
+  "370614": {
+    "code": "370614",
+    "text": "蓬莱区",
+    "provinceCode": "37",
+    "cityCode": "3706",
+    "areaCode": "370614"
   },
   "370620": {
     "code": "370620",
@@ -21370,6 +21636,13 @@
     "cityCode": "3715",
     "areaCode": "371502"
   },
+  "371503": {
+    "code": "371503",
+    "text": "茌平区",
+    "provinceCode": "37",
+    "cityCode": "3715",
+    "areaCode": "371503"
+  },
   "371521": {
     "code": "371521",
     "text": "阳谷县",
@@ -21481,6 +21754,13 @@
     "provinceCode": "37",
     "cityCode": "3716",
     "areaCode": "371626"
+  },
+  "371681": {
+    "code": "371681",
+    "text": "邹平市",
+    "provinceCode": "37",
+    "cityCode": "3716",
+    "areaCode": "371681"
   },
   "371700": {
     "code": "371700",
@@ -23344,6 +23624,13 @@
     "cityCode": "4107",
     "areaCode": "410782"
   },
+  "410783": {
+    "code": "410783",
+    "text": "长垣市",
+    "provinceCode": "41",
+    "cityCode": "4107",
+    "areaCode": "410783"
+  },
   "410800": {
     "code": "410800",
     "text": "焦作市",
@@ -23966,6 +24253,13 @@
     "provinceCode": "41",
     "cityCode": "4116",
     "areaCode": "411602"
+  },
+  "411603": {
+    "code": "411603",
+    "text": "淮阳区",
+    "provinceCode": "41",
+    "cityCode": "4116",
+    "areaCode": "411603"
   },
   "411621": {
     "code": "411621",
@@ -25801,6 +26095,13 @@
     "cityCode": "4208",
     "areaCode": "420881"
   },
+  "420882": {
+    "code": "420882",
+    "text": "京山市",
+    "provinceCode": "42",
+    "cityCode": "4208",
+    "areaCode": "420882"
+  },
   "420900": {
     "code": "420900",
     "text": "孝感市",
@@ -27089,6 +27390,13 @@
     "cityCode": "4302",
     "areaCode": "430211"
   },
+  "430212": {
+    "code": "430212",
+    "text": "渌口区",
+    "provinceCode": "43",
+    "cityCode": "4302",
+    "areaCode": "430212"
+  },
   "430219": {
     "code": "430219",
     "text": "醴陵市",
@@ -27452,6 +27760,13 @@
     "provinceCode": "43",
     "cityCode": "4305",
     "areaCode": "430581"
+  },
+  "430582": {
+    "code": "430582",
+    "text": "邵东市",
+    "provinceCode": "43",
+    "cityCode": "4305",
+    "areaCode": "430582"
   },
   "430600": {
     "code": "430600",
@@ -29272,6 +29587,13 @@
     "provinceCode": "44",
     "cityCode": "4403",
     "areaCode": "440310"
+  },
+  "440311": {
+    "code": "440311",
+    "text": "光明区",
+    "provinceCode": "44",
+    "cityCode": "4403",
+    "areaCode": "440311"
   },
   "440321": {
     "code": "440321",
@@ -31989,6 +32311,13 @@
     "cityCode": "4503",
     "areaCode": "450332"
   },
+  "450381": {
+    "code": "450381",
+    "text": "荔浦市",
+    "provinceCode": "45",
+    "cityCode": "4503",
+    "areaCode": "450381"
+  },
   "450400": {
     "code": "450400",
     "text": "梧州市",
@@ -32276,6 +32605,13 @@
     "cityCode": "4510",
     "areaCode": "451002"
   },
+  "451003": {
+    "code": "451003",
+    "text": "田阳区",
+    "provinceCode": "45",
+    "cityCode": "4510",
+    "areaCode": "451003"
+  },
   "451021": {
     "code": "451021",
     "text": "田阳县",
@@ -32359,6 +32695,13 @@
     "provinceCode": "45",
     "cityCode": "4510",
     "areaCode": "451081"
+  },
+  "451082": {
+    "code": "451082",
+    "text": "平果市",
+    "provinceCode": "45",
+    "cityCode": "4510",
+    "areaCode": "451082"
   },
   "451100": {
     "code": "451100",
@@ -34187,6 +34530,13 @@
     "cityCode": "5101",
     "areaCode": "510117"
   },
+  "510118": {
+    "code": "510118",
+    "text": "新津区",
+    "provinceCode": "51",
+    "cityCode": "5101",
+    "areaCode": "510118"
+  },
   "510121": {
     "code": "510121",
     "text": "金堂县",
@@ -34670,6 +35020,13 @@
     "cityCode": "5106",
     "areaCode": "510603"
   },
+  "510604": {
+    "code": "510604",
+    "text": "罗江区",
+    "provinceCode": "51",
+    "cityCode": "5106",
+    "areaCode": "510604"
+  },
   "510621": {
     "code": "510621",
     "text": "德阳县",
@@ -34928,6 +35285,13 @@
     "provinceCode": "51",
     "cityCode": "5109",
     "areaCode": "510923"
+  },
+  "510981": {
+    "code": "510981",
+    "text": "射洪市",
+    "provinceCode": "51",
+    "cityCode": "5109",
+    "areaCode": "510981"
   },
   "511000": {
     "code": "511000",
@@ -35390,6 +35754,13 @@
     "provinceCode": "51",
     "cityCode": "5115",
     "areaCode": "511503"
+  },
+  "511504": {
+    "code": "511504",
+    "text": "叙州区",
+    "provinceCode": "51",
+    "cityCode": "5115",
+    "areaCode": "511504"
   },
   "511521": {
     "code": "511521",
@@ -38317,6 +38688,13 @@
     "cityCode": "5223",
     "areaCode": "522301"
   },
+  "522302": {
+    "code": "522302",
+    "text": "兴仁市",
+    "provinceCode": "52",
+    "cityCode": "5223",
+    "areaCode": "522302"
+  },
   "522321": {
     "code": "522321",
     "text": "兴义县",
@@ -38926,6 +39304,13 @@
     "cityCode": "5303",
     "areaCode": "530303"
   },
+  "530304": {
+    "code": "530304",
+    "text": "马龙区",
+    "provinceCode": "53",
+    "cityCode": "5303",
+    "areaCode": "530304"
+  },
   "530321": {
     "code": "530321",
     "text": "马龙县",
@@ -39066,6 +39451,13 @@
     "cityCode": "5304",
     "areaCode": "530428"
   },
+  "530481": {
+    "code": "530481",
+    "text": "澄江市",
+    "provinceCode": "53",
+    "cityCode": "5304",
+    "areaCode": "530481"
+  },
   "530500": {
     "code": "530500",
     "text": "保山市",
@@ -39198,6 +39590,13 @@
     "provinceCode": "53",
     "cityCode": "5306",
     "areaCode": "530630"
+  },
+  "530681": {
+    "code": "530681",
+    "text": "水富市",
+    "provinceCode": "53",
+    "cityCode": "5306",
+    "areaCode": "530681"
   },
   "530700": {
     "code": "530700",
@@ -42041,6 +42440,13 @@
     "cityCode": "6104",
     "areaCode": "610481"
   },
+  "610482": {
+    "code": "610482",
+    "text": "彬州市",
+    "provinceCode": "61",
+    "cityCode": "6104",
+    "areaCode": "610482"
+  },
   "610500": {
     "code": "610500",
     "text": "渭南市",
@@ -42236,6 +42642,13 @@
     "provinceCode": "61",
     "cityCode": "6106",
     "areaCode": "610632"
+  },
+  "610681": {
+    "code": "610681",
+    "text": "子长市",
+    "provinceCode": "61",
+    "cityCode": "6106",
+    "areaCode": "610681"
   },
   "610700": {
     "code": "610700",
@@ -43588,6 +44001,13 @@
     "cityCode": "6208",
     "areaCode": "620826"
   },
+  "620881": {
+    "code": "620881",
+    "text": "华亭市",
+    "provinceCode": "62",
+    "cityCode": "6208",
+    "areaCode": "620881"
+  },
   "620900": {
     "code": "620900",
     "text": "酒泉市",
@@ -44554,6 +44974,13 @@
     "cityCode": "6301",
     "areaCode": "630105"
   },
+  "630106": {
+    "code": "630106",
+    "text": "湟中区",
+    "provinceCode": "63",
+    "cityCode": "6301",
+    "areaCode": "630106"
+  },
   "630111": {
     "code": "630111",
     "text": "郊区",
@@ -44742,6 +45169,13 @@
     "provinceCode": "63",
     "cityCode": "6323",
     "areaCode": "632300"
+  },
+  "632301": {
+    "code": "632301",
+    "text": "同仁市",
+    "provinceCode": "63",
+    "cityCode": "6323",
+    "areaCode": "632301"
   },
   "632321": {
     "code": "632321",
@@ -44945,6 +45379,13 @@
     "provinceCode": "63",
     "cityCode": "6328",
     "areaCode": "632802"
+  },
+  "632803": {
+    "code": "632803",
+    "text": "茫崖市",
+    "provinceCode": "63",
+    "cityCode": "6328",
+    "areaCode": "632803"
   },
   "632821": {
     "code": "632821",
@@ -46024,6 +46465,13 @@
     "cityCode": "6529",
     "areaCode": "652901"
   },
+  "652902": {
+    "code": "652902",
+    "text": "库车市",
+    "provinceCode": "65",
+    "cityCode": "6529",
+    "areaCode": "652902"
+  },
   "652921": {
     "code": "652921",
     "text": "阿克苏县",
@@ -46625,6 +47073,13 @@
     "provinceCode": "65",
     "cityCode": "6590",
     "areaCode": "659009"
+  },
+  "659010": {
+    "code": "659010",
+    "text": "胡杨河市",
+    "provinceCode": "65",
+    "cityCode": "6590",
+    "areaCode": "659010"
   },
   "710000": {
     "code": "710000",
