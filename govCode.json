@@ -46646,5 +46646,12 @@
     "provinceCode": "82",
     "cityCode": "8200",
     "areaCode": "820000"
+  },
+  "830000": {
+    "code": "830000",
+    "text": "台湾省",
+    "provinceCode": "83",
+    "cityCode": "8300",
+    "areaCode": "830000"
   }
 }
