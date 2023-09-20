@@ -71,7 +71,7 @@ export type IdCardSuccessResult = {
   /**
    * @example 广东省湛江市雷州市
    */
-  address: "广东省湛江市雷州市";
+  address: string;
 
   /**
    * 周岁
