@@ -121,7 +121,7 @@ export function info(idcard: string): IdCardResult;
 /**
  * 生成一个随机的【18位】身份证
  */
-export function generateIdcard(): string;
+export function generateIdcard({areaCode, birthday, localPolice, gener}: {areaCode?: string, birthday?: string, localPolice?: string, gener?: Number}): string;
 
 /**
  * 获取星座

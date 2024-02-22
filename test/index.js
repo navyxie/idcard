@@ -35,12 +35,16 @@ describe('#idCard#', function() {
     });
     it('it must be ok', function() {
       var randIdcard = idCard.generateIdcard({
-        year: '',
-        monty: '',
-        date: '',
-        province: '',
-        city: '',
-        area: ''
+        areaCode: '440882'
+      });
+      idCard.verify(randIdcard).should.be.true();
+    });
+    it('it must be ok', function() {
+      var randIdcard = idCard.generateIdcard({
+        areaCode: '440882',
+        birthday: '19910210',
+        localPolice: '01',
+        gener: 2
       });
       idCard.verify(randIdcard).should.be.true();
     });
