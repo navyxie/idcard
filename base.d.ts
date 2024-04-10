@@ -8,6 +8,13 @@ export type IdCardSuccessResult = {
    */
   gender: "M" | "F";
 
+  /**
+   * 生日
+   * 
+   * @example 19910210
+   */
+  birthday: number;
+
   province: {
     /**
      * 6位省份编号
